@@ -11,12 +11,12 @@
         }
 
         #datos{
-            padding: 15px;
-            border-radius: 12px;
-            border: solid 2px #e1e3ed;
-            margin: 20px 0;
-                padding-left: 25px;
-                line-height: 10px;
+                padding: 10px; 
+    border-radius: 12px;
+    border: solid 2px #e1e3ed;
+    margin: 20px 0;
+    padding-left: 12px;
+    /* line-height: 10px;*/
         }
 
         .dark-mode #datos {
@@ -155,6 +155,9 @@
     display: flex;
     justify-content: space-between;
     transition: transform .45s ease;
+
+    margin-top: -110px;
+
         }
          #next_prev_personaje a{   display: flex;
     color: white;
@@ -194,6 +197,9 @@ transform: translateY(-5px);
 }
 
 
+@media screen and (max-width: 1300px) {
+    #next_prev_personaje { margin-top: 0px;}
+}
 @media screen and (max-width: 439px) {
     #next_prev_personaje {justify-content: space-around;}
     .next_prev_thumb {aspect-ratio: 1 / 1;}

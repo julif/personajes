@@ -41,10 +41,15 @@ main{
     border-radius: 12px;
     padding-bottom: 35px;
 }
+main img{
+  border-radius: 12px;
+}
 .dark-mode main{
   background-color: #1b1d2a;
 }
-h1{border-bottom: solid #e1e3ed;}
+h1{border-bottom: solid #e1e3ed;
+font-size: 50px;
+}
 .dark-mode h1{border-bottom: solid #2b2e41;}
 p{font-size: 18px;  padding-left: 10px;
     padding-right: 10px;}

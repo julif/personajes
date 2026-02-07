@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/personaje.css">
+    <title>Narimine</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+    <main>
+         <button id="home"><a href="../index.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" ><path d="m19.5548639 2.6028224 8.9944388 6.59912643c1.5405939 1.13031777 2.4506973 2.92683637 2.4506973 4.83760787v11.9604433c0 3.3137085-2.6862915 6-6 6h-18c-3.3137085 0-6-2.6862915-6-6v-11.958697c0-1.9117507.91103125-3.7090683 2.45293825-4.83925127l9.00556125-6.60087271c2.1123042-1.54827125 4.9847775-1.54760604 7.0963644.00164338zm-3.5548639 13.3971776c-2.209139 0-4 1.790861-4 4v3c0 .5522847.4477153 1 1 1h6c.5522847 0 1-.4477153 1-1v-3c0-2.209139-1.790861-4-4-4z" /></svg></a></button>
+        <button id="themeToggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 11.807A9.002 9.002 0 0 1 10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 10.237 0 14.142 3.906 3.906 10.237 3.905 14.143 0a9.946 9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z"></path></svg>
+        </button>
+
+        <div id="main_img">
+            <img src="../img/luzbella_main.jpg" alt="Narimine Principal">
+        </div>
+
+        <h1 style="text-align: center;">Narímine</h1>
+    <p><b>Narímine</b> la gris es la creadora y primera usuaria de la fuerza de manipulacion universal conocida como la Magh.</p>
+        
+      <div id="datos">
+            <p><strong>Nombre:</strong> Narímine</br>
+           <strong>Titulos:</strong> Líder de los Hechiceros Reales, Consejera de la Gran Reina Roja</br>
+           <strong>Especie:</strong> Elfo gris</br>
+           <strong>Género:</strong> Femenino</p>
+        </div>
+     <h2>Pasado conquistador</h2>
+     <p>Antes de servir a <b>Lith</b>, <b>Narímine</b> fue una guerrera conquistadora.</p>
+     <p>Usando su fuego y un ejército numeroso, unificó bajo su estandarte casi la mitad del continente donde nació.<br>
+     Antes de conocer a la gran reina roja <b>Narímine</b> estaba convencida de ser la criatura más poderosa de el mundo y que gobernar era su derecho natural.</p>
+     <h2>La máscara</h2>
+    
+     <p><b>Narímine</b> utiliza una máscara compuesta por dos mitades independientes, puede usar solo una para ocultar el lado de su rostro cubierto con cicatrizes o unir ambas para formar una máscara completa cuando entra en misiones, busca intimidar, o necesita ocultar por completo gestos y emociones.</p>
+      <img src="../img/luzbella_mascara.png" style="width: 100%;">
+     <p> Cuando no usa su mascara <b>Narímine</b> suele ocultar la mitad de su rostro con su cabello, solo las personas que ganan cierto nivel de su confianza llegan a ver su rostro completo.</p>
+     <h2>Galeria</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img onclick="openModal(1)" src="../img/luzbella_gallery_1.png" alt="Narimine 1"></div>
+            <div class="gallery-item"><img onclick="openModal(2)" src="../img/luzbella_gallery_2.jpg" alt="Narimine 2"></div>
+        </div>
+
+      
+    </main>
+        <div id="next_prev_personaje">  
+             <button >  <a href="shacta.html">
+            
+                <span style="margin-right: 20px;margin-left: 10px;">❮</span>
+                <div class="next_prev_thumb"><img src="../img/shacta_thumb.png"></div></a>
+              </button>
+             
+                <button>  <a href="aniabet.html">
+                <div class="next_prev_thumb"><img src="../img/aniabet_thumb.png"></div><span style="margin-left: 20px;margin-right: 10px;">❯</span>
+              </a>
+            </button>  
+        </div>
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content" id="modalContent">
+            <div class="mySlides"><img src="../img/luzbella_gallery_1.png"><div class="caption-container">Narimine - viejo diseño</div> </div>
+            <div class="mySlides"><img src="../img/luzbella_gallery_2.jpg"></div>
+
+            <a class="prev" id="prevBtn" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" id="nextBtn" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+<script src="../js/theme.js"></script> 
+<script src="../js/modal_gallery.js"></script> 
+</body>
+</html>
