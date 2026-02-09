@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/personaje.css">
+     <script src="../personajes_lista.js"></script> 
+    <script src="../js/actualizarNavegacion.js"></script> 
+    <script src="../js/constructor.js"></script> 
     <title>Narimine</title>
     <style>
 
@@ -26,12 +29,12 @@
         <h1 style="text-align: center;">Narímine</h1>
     <p><b>Narímine</b> la gris es la creadora y primera usuaria de la fuerza de manipulacion universal conocida como la Magh.</p>
         
-      <div id="datos">
-            <p><strong>Nombre:</strong> Narímine</br>
-           <strong>Titulos:</strong> Líder de los Hechiceros Reales, Consejera de la Gran Reina Roja</br>
-           <strong>Especie:</strong> Elfo gris</br>
-           <strong>Género:</strong> Femenino</p>
-        </div>
+    <div id="datos">
+        <p><strong>Nombre:</strong> Narímine</p>
+        <p><strong>Titulos:</strong> Líder de los Hechiceros Reales, Consejera de la Gran Reina Roja</p>
+        <p><strong>Especie:</strong> Elfo gris</p>
+        <p><strong>Género:</strong> Femenino</p> 
+    </div>
      <h2>Pasado conquistador</h2>
      <p>Antes de servir a <b>Lith</b>, <b>Narímine</b> fue una guerrera conquistadora.</p>
      <p>Usando su fuego y un ejército numeroso, unificó bajo su estandarte casi la mitad del continente donde nació.<br>
@@ -50,15 +53,11 @@
       
     </main>
         <div id="next_prev_personaje">  
-             <button >  <a href="shacta.html">
-            
-                <span style="margin-right: 20px;margin-left: 10px;">❮</span>
-                <div class="next_prev_thumb"><img src="../img/shacta_thumb.png"></div></a>
-              </button>
-             
-                <button>  <a href="aniabet.html">
-                <div class="next_prev_thumb"><img src="../img/aniabet_thumb.png"></div><span style="margin-left: 20px;margin-right: 10px;">❯</span>
-              </a>
+            <button >
+                <a  id="prevLink" ><span>❮</span><div class="next_prev_thumb"><img id="prevImg" ></div></a>
+            </button>
+            <button>
+                <a  id="nextLink" > <div class="next_prev_thumb"><img id="nextImg" ></div><span>❯</span></a>
             </button>  
         </div>
     <div id="myModal" class="modal">

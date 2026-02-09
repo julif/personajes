@@ -3,13 +3,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/estilos.css">
+      <!-- <script src="js/constructor.js"></script>  -->
     <title>Mis Personajes</title>
     <style>
         .grid {
             display: grid;
             /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
-             grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
-            gap: 16px;
+             grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
+            gap: 10px;
         }
         .grid-item {
             position: relative;
@@ -29,20 +30,71 @@
             transform: scale(1.1);
             /* transform: scale(1.3) rotate(8deg); */
         }
+
+      .badge-nuevo {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+   /*  background: linear-gradient(135deg, gold, orange); */
+    color: #ffffff;
+    padding: 4px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    z-index: 5;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+    pointer-events: none;
+    text-transform: uppercase;
+    padding: 9px;
+    background-color: #000000cc;
+}
+.badge-nuevo {
+    /* animation: glow 1.5s infinite alternate; */
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 5px gold; }
+    to   { box-shadow: 0 0 12px orange; }
+}
     </style>
   </head>
   <body>
     <main>
         <button id="themeToggle"><svg class="toggle-button" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M12 11.807A9.002 9.002 0 0 1 10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 10.237 0 14.142 3.906 3.906 10.237 3.905 14.143 0a9.946 9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z"></path></svg></button>
         <content>
-            <h1 style="margin-top: 0px;">Mis Personajes:</h1>
+            <h2 style="margin-top: 10px;">Personajes:</h2>
             <div class="grid">
+                  <div class="grid-item"><span class="badge-nuevo" data-fecha="9-02-2026">NUEVO</span><a href="personajes/neda.html"> <img src="img/neda_thumb.png"></a></div>
                  <div class="grid-item"> <a href="personajes/luzbella.html"> <img src="img/luzbella_thumb.png"></a></div>
                 <div class="grid-item"> <a href="personajes/aniabet.html"> <img src="img/aniabet_thumb.png"></a></div>
                 <div class="grid-item"> <a href="personajes/shacta.html"> <img src="img/shacta_thumb.png"></a></div>
+                
             </div>
         </content>
     </main>
   </body>
 <script src="js/theme.js"></script> 
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const DIAS = 4;
+    const ahora = Date.now();
+
+    document.querySelectorAll(".badge-nuevo").forEach(badge => {
+        const fechaTxt = badge.dataset.fecha;
+        if (!fechaTxt) return;
+
+        const [dia, mes, anio] = fechaTxt.split("-").map(Number);
+
+        const inicio = new Date(anio, mes - 1, dia).getTime();
+        const limite = inicio + DIAS * 24 * 60 * 60 * 1000;
+
+        if (ahora > limite) {
+            badge.remove();
+        }
+    });
+});
+</script>
+
+
 </html>

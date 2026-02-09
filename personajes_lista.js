@@ -1,0 +1,1 @@
+const personajes = ["neda", "luzbella", "aniabet", "shacta"];

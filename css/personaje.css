@@ -1,17 +1,29 @@
+        
+        h1{margin-top: 5px;}
         #main_img {
             max-width: 100%;
             display: flex;
             justify-content: center;
+
+
+
         }
 
         #main_img img {
-            border-radius: 12px;
+          /*   border-radius: 12px;
             max-width: 600px;
-            width: 100%;
+            width: 100%; */
+
+border-radius: 12px;
+    /* max-width: 600px; */
+    width: 100%;
+    max-height: 600px;
+    width: auto;
+max-width: -webkit-fill-available;
         }
 
         #datos{
-                padding: 10px; 
+                /* padding: 10px;  */
     border-radius: 12px;
     border: solid 2px #e1e3ed;
     margin: 20px 0;
@@ -21,7 +33,9 @@
 
         .dark-mode #datos {
             background-color: #2b2e41;
-            border: none;
+            /* border: none; */
+            border-color: #2b2e41;
+
         }
 
         /* GALERÍA CORREGIDA */
@@ -157,6 +171,7 @@
     transition: transform .45s ease;
 
     margin-top: -110px;
+    padding: 0px 10px;
 
         }
          #next_prev_personaje a{   display: flex;
@@ -172,21 +187,29 @@
                 display: flex;
     align-items: center;
     font-size: 30px;
-    background-color: #2b2e41;
+  
+    background-color: #67768b6e;
     border: none;
     color: white;
     padding: 11px;
     border-radius: 11px;
-
+    background-color: #ffffff;
+        border: solid #e1e3ed;
 
         }
+#next_prev_personaje a {color: #000000;}
+        
+        .dark-mode  #next_prev_personaje button{   background-color: #2b2e41; border: none;}
+ .dark-mode #next_prev_personaje a {color: white;}
+
         #next_prev_personaje button:hover{
 transform: translateY(-5px);
 
          }
         .next_prev_thumb{      border-radius: 12px;
     overflow: hidden;
-    height: 80px;
+    /* height: 80px; */
+    height: 55px;
     /* aspect-ratio: 1 / 1; */
 }
 
@@ -195,12 +218,13 @@ transform: translateY(-5px);
     height: 100%;
     object-fit: cover;
 }
-
+#prevLink span{margin-right: 20px;margin-left: 10px;}
+#nextLink span{margin-left: 20px;margin-right: 10px;}
 
 @media screen and (max-width: 1300px) {
     #next_prev_personaje { margin-top: 0px;}
 }
 @media screen and (max-width: 439px) {
-    #next_prev_personaje {justify-content: space-around;}
+    /* #next_prev_personaje {justify-content: space-around;} */
     .next_prev_thumb {aspect-ratio: 1 / 1;}
 }

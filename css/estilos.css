@@ -1,6 +1,7 @@
 body {
   font-family: rubik, helvetica, arial, sans-serif;
   background-color: #e1e3ed;
+  margin: 0px;
 }
 .dark-mode {
   background: #111;
@@ -63,4 +64,17 @@ body{
 
 .dark-mode{
   background-color: #1b1d2a;
+}
+/* footer */
+.footer {
+  margin-top: 10px;
+  padding: 30px 20px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-content {
+  opacity: .8;
 }
