@@ -78,3 +78,8 @@ body{
 .footer-content {
   opacity: .8;
 }
+
+
+   /* Lógica de Idiomas */
+        body.lang-en .lang-es { display: none; }
+        body.lang-es .lang-en { display: none; }
