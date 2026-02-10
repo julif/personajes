@@ -22,8 +22,8 @@ function actualizarNavegacion() {
   document.getElementById("nextLink").href = `${next}.html`;
 
   // imágenes
-  document.getElementById("prevImg").src = `../img/${prev}_thumb.png`;
-  document.getElementById("nextImg").src = `../img/${next}_thumb.png`;
+  document.getElementById("prevImg").src = `img/${prev}_thumb.png`;
+  document.getElementById("nextImg").src = `img/${next}_thumb.png`;
 
   // opcional
   document.getElementById("prevImg").alt = prev;

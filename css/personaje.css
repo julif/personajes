@@ -62,7 +62,11 @@ max-width: -webkit-fill-available;
             transition: transform 0.3s ease;
             cursor: pointer;
             display: block;
+
         }
+
+       .gallery-item img{border: solid #e1e3ed;}
+         .dark-mode .gallery-item img{border: none;}
 .gallery-item img:hover {
     transform: scale(1.02);
     cursor: pointer;
@@ -141,7 +145,7 @@ max-width: -webkit-fill-available;
             z-index: 1100;
             text-decoration: none;
             background: rgba(0,0,0,0.3);
-            border-radius: 50%;
+            border-radius: 16%;
             display: flex; /* Se controla por JS si hay > 1 imagen */
         }
 
