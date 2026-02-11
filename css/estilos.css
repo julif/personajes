@@ -53,10 +53,15 @@ font-size: 50px;
 }
 .dark-mode h1{border-bottom: solid #2b2e41;}
 p{font-size: 18px;  padding-left: 10px;
-    padding-right: 10px;}
+    padding-right: 10px;
+  
+  line-height: 25px;
+  }
 .dark-mode p{color: #bfc2d5;}
 .dark-mode b ,.dark-mode strong{ color: white;}
 
+
+/* #datos p{line-height: inherit;} */
 
 body{
   background-color: #fff;
@@ -67,18 +72,23 @@ body{
 }
 /* footer */
 .footer {
-  margin-top: 10px;
-  padding: 30px 20px;
-  background: #111;
-  color: #fff;
-  text-align: center;
-  font-size: 14px;
+    margin-top: 10px;
+    padding: 30px 20px;
+    /* background: #111; */
+    color: #2b2e41;
+    text-align: center;
+    font-size: 14px;
+    border-top: solid #e1e3ed;
 }
-
+.dark-mode .footer{
+  border-top: solid #2b2e41;
+}
 .footer-content {
   opacity: .8;
 }
 
+h3{ color: #2373c9;}
+.dark-mode h3{ color: #5ea3ed;}
 
    /* Lógica de Idiomas */
         body.lang-en .lang-es { display: none; }

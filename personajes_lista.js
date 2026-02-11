@@ -1,1 +1,1 @@
-const personajes = ["neda", "luzbella", "aniabet", "shacta"];
+const personajes = ["rey_conejo", "neda", "luzbella", "aniabet", "shacta"];

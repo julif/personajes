@@ -5,7 +5,7 @@ function crearFooter() {
   footer.innerHTML = `
     <div class="footer-content">
    
-      <p> Galeria de personajes - v1.2.2</p>
+      <p> Galeria de personajes - v1.3</p>
     </div>
   `;
 

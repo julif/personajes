@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/estilos.css">
-      <!-- <script src="js/constructor.js"></script>   -->
+       <script src="js/constructor.js"></script>  
     <title>Mis Personajes</title>
     <style>
         .grid {
@@ -36,21 +36,21 @@
     position: absolute;
     top: 5px;
     right: 5px;
-   /*  background: linear-gradient(135deg, gold, orange); */
+     background: linear-gradient(135deg, gold, orange); 
     color: #ffffff;
     padding: 4px 10px;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: bold;
     border-radius: 3px;
     z-index: 5;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
     pointer-events: none;
     text-transform: uppercase;
-    padding: 9px;
+    padding: 5px;
     background-color: #000000cc;
 }
 .badge-nuevo {
-    /* animation: glow 1.5s infinite alternate; */
+     animation: glow 1.5s infinite alternate; 
 }
 
 @keyframes glow {
@@ -93,7 +93,7 @@
             <div class="grid"> 
 
               <!--    <div class="grid-item"> <a href="luzbella.html"> <img src="img/luzbella_thumb.png"></a></div> -->
-
+                 <div class="grid-item"><span class="badge-nuevo" data-fecha="11-02-2026"> <b class="lang-es">NUEVO</b>  <b class="lang-en">NEW</b></span><a href="rey_conejo.html"> <img src="img/rey_conejo_thumb.png"></a></div>
                   <div class="grid-item"><span class="badge-nuevo" data-fecha="9-02-2026"> <b class="lang-es">NUEVO</b>  <b class="lang-en">NEW</b></span><a href="neda.html"> <img src="img/neda_thumb.png"></a></div>
                  <div class="grid-item"> <a href="luzbella.html"> <img src="img/luzbella_thumb.png"></a></div>
                 <div class="grid-item"> <a href="aniabet.html"> <img src="img/aniabet_thumb.png"></a></div>
@@ -101,7 +101,11 @@
                 
             </div>
 
+   
+
   
+    </div>
+
         </content>
     </main>
   </body>
@@ -137,7 +141,7 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    const DIAS = 4;
+    const DIAS = 2;
     const ahora = Date.now();
 
     document.querySelectorAll(".badge-nuevo").forEach(badge => {
